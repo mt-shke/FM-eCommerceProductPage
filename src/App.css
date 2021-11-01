@@ -1,0 +1,37 @@
+.App {
+	text-align: center;
+	min-height: 100vh;
+}
+
+.App hr {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.App hr {
+		display: block;
+		border: none;
+		border-top: 1px solid rgba(128, 128, 128, 0.411);
+		margin: 0 auto;
+		position: relative;
+		z-index: 7;
+		width: 100%;
+	}
+}
+@media (min-width: 992px) {
+	.App {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+	.App hr {
+		border-top: 1px solid rgba(128, 128, 128, 0.411);
+		width: 60rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.App hr {
+		width: 67rem;
+	}
+}

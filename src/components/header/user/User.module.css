@@ -1,0 +1,50 @@
+.user {
+	margin: 0 0 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	width: 4.2rem;
+	position: relative;
+}
+
+.cart-icon {
+	position: relative;
+	z-index: 9;
+}
+
+.cart-icon span {
+	padding: 0px 6px;
+	border-radius: 5rem;
+	content: var(--content);
+	background-color: var(--clr-orange);
+	position: absolute;
+	font-size: 0.7rem;
+	left: 80%;
+	top: -0.5rem;
+	transform: translate(-50%);
+	color: white;
+}
+
+.cart-icon,
+.avatar:hover {
+	cursor: pointer;
+}
+
+.avatar {
+	height: 2rem;
+	width: 2rem;
+}
+
+.overlay {
+	position: fixed;
+	inset: 0 0 0 0;
+	z-index: 7;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 560px) {
+	.user {
+		width: 5.4rem;
+	}
+}
