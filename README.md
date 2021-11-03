@@ -183,3 +183,53 @@ export default configureStore;
 ```
 
 </details>
+
+
+<details>
+<summary>optional chaining?
+</summary>
+
+```js
+	const minus = event.target.closest("div")?.classList.contains("minus");
+		const plus = event.target.closest("div")?.classList.contains("plus");
+		const add = event.target.closest("button")?.classList.contains("btn-add");
+
+
+```
+
+</details>
+
+
+
+<details>
+<summary>
+responsive =>  document.body.clientWidth;
+</summary>
+
+```js
+const toggleModal = () => {
+	const responsive = document.body.clientWidth;
+	if (responsive >= 768) {
+		setModal((o) => !o);
+	}
+};
+```
+
+</details>
+
+<details>
+<summary>
+filter svg black/white
+</summary>
+
+```css
+.container__cart button img {
+	filter: saturate(100%) brightness(220%);
+}
+```
+
+-https://codepen.io/sosuke/pen/Pjoqqp
+
+-https://www.color-hex.com/color/ff7d1a
+
+</details>
