@@ -184,23 +184,6 @@ export default configureStore;
 
 </details>
 
-
-<details>
-<summary>optional chaining?
-</summary>
-
-```js
-	const minus = event.target.closest("div")?.classList.contains("minus");
-		const plus = event.target.closest("div")?.classList.contains("plus");
-		const add = event.target.closest("button")?.classList.contains("btn-add");
-
-
-```
-
-</details>
-
-
-
 <details>
 <summary>
 responsive =>  document.body.clientWidth;
